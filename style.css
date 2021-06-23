@@ -60,7 +60,8 @@ body {
 }
 
 
-header h1 a {
+header h1 a,
+header h1 a:not(.home) {
     color: var(--text-bold);
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
@@ -68,6 +69,8 @@ header h1 a {
     text-align: center;
 }
 
+#post nav a:not(.home), 
+header nav a,
 header a {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -75,7 +78,8 @@ header a {
     font-style: italic;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a:not(.home):hover {
     color: var(--highlight);
     text-decoration: none;
 }
@@ -293,11 +297,14 @@ footer p {
     color: var(--text);
 }
 
-footer p a {
+footer p a,
+body footer a.home:link,
+body footer a.home:visited  {
     color: var(--text-bold);
 }
 
-footer p a:hover {
+footer p a:hover,
+body footer nav a.home:hover {
     color: var(--highlight)
 }
 
