@@ -190,7 +190,11 @@ body#post article .e-content p {
     font-family: 'Open Sans', sans-serif;
 }
 
-body#post article .e-content p a {
+body#post article .e-content p a,
+body #post article ol a,
+body #post article ul a,
+body#post article ol a,
+body#post article ul a {
     color: var(--background);
     border-bottom: solid 2px var(--highlight);
     background: transparent;
@@ -199,7 +203,11 @@ body#post article .e-content p a {
     transition: border-bottom .6s ease-in-out, background .3s ease-in-out
 }
 
-body#post article .e-content p a:hover {
+body#post article .e-content p a:hover,
+body #post article ol a:hover,
+body #post article ul a:hover,
+body#post article ol a:hover,
+body#post article ul a:hover {
     color: var(--background);
     border-bottom: solid 2px transparent;
     background: var(--highlight-transparent);
@@ -219,6 +227,20 @@ body#post blockquote p,
 body#subpage blockquote p {
     font-style: italic;
     color: var(--background);
+}
+
+body #post article ol,
+body #post article ul,
+body#post article ol,
+body#post article ul {
+color: var(--background)
+}
+
+body #post article ol li::marker,
+body #post article ul li::marker,
+body#post article ol li::marker,
+body#post article ul li::marker {
+  color: var(--highlight);
 }
 
 /*** TAGS ***/
