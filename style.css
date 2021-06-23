@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Code+Pro:wght@300;400;500&display=swap');
+
+:root {
+    --background: #090909;
+    --background-gradient: linear-gradient(180deg, #090909, #04040f);
+    --text: #A2A2A2;
+    --text-bold: #D2D2D2;
+    --highlight: #ff7300;
+    --highlight-dark: #ff5100;
+    --higlight-gradient-dark: linear-gradient(180deg, var(--highlight-dark), var(--highlight));
+    --highlight-opa: #4444443d;
+    --highlight-transparent: rgba(255, 115, 0, 0.2);
+}
+
+/*** GENERAL ***/
+
+body {
+    background: var(--background);
+    background: var(--background);
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+
+/*** HEADER ***/
+@media screen and (max-width: 550px) {
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    header nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    header nav a {
+        margin: 0;
+        color: var(--text-bold);
+    }
+
+    header h1 {
+        text-align: center;
+        color: var(--text-bold);
+
+    }
+
+    body#post header,
+    body#subpage header {
+        opacity: 1;
+    }
+}
+
+
+header h1 a {
+    color: var(--text-bold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+header a {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-style: italic;
+}
+
+header nav a:hover {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+/*** HOME and TAGS ARCHIVES ***/
+
+body#collection section#wrapper,
+body#subpage section#wrapper {
+    max-width: 60rem;
+}
+
+body#collection .post-title a,
+body#subpage .post-title a {
+    color: var(--text-bold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+}
+
+body#collection .post-title,
+body#subpage .post-title {
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    border-left-style: solid;
+    border-color: var(--highlight);
+    border-left-width: .2rem;
+    -webkit-transition: padding-left .4s ease-in-out, border-color .2s ease-in-out;
+    -o-transition: padding-left .4s ease-in-out, border-color .2s ease-in-out;
+    transition: padding-left .4s ease-in-out, border-color .2s ease-in-out;
+}
+
+body#collection .post-title:hover,
+body#subpage .post-title:hover {
+    padding-left: .15rem;
+    border-color: transparent;
+}
+
+/* body#collection .post-title:after,
+body#subpage .post-title:after  {  
+content: "---";
+opacity: 0;
+-webkit-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+body#collection .post-title:hover:after,  
+body#subpage .post-title:hover:after {  
+opacity: 1;
+} */
+
+body#collection .post-title a:hover,
+body#subpage .post-title a:hover {
+    text-decoration: none;
+    color: var(--highlight);
+
+}
+
+body#collection article p,
+body#subpage article p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body#collection article p a,
+body#subpage article p a {
+    color: var(--text-bold);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+body#collection article p a:hover,
+body#subpage article p a:hover {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+body#collection a.read-more, 
+body#subpage a.read-more  {
+    color: default;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+body#collection a.read-more:hover, 
+body#subpage a.read-more:hover {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+/*** ARTICLE ***/
+body#post article {
+    padding: 4rem 3rem;
+    background-color: white;
+    color: var(--background);
+    -webkit-box-shadow: rgb(76 170 175 / 20%) 0px 13px 27px -5px, rgb(120 35 160 / 10%) 0px 40px 100px -38px;
+    box-shadow: rgb(76 170 175 / 20%) 0px 13px 27px -5px, rgb(120 35 160 / 10%) 0px 40px 100px -38px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 50rem;
+}
+
+body#post article h2#title {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+body#post article .e-content p a {
+    color: var(--background);
+    border-bottom: solid 2px var(--highlight);
+    background: transparent;
+    -webkit-transition: border-bottom .6s ease-in-out, background .3s ease-in-out;
+    -o-transition: border-bottom .6s ease-in-out, background .3s ease-in-out;
+    transition: border-bottom .6s ease-in-out, background .3s ease-in-out
+}
+
+body#post article .e-content p a:hover {
+    color: var(--background);
+    border-bottom: solid 2px transparent;
+    background: var(--highlight-transparent);
+    text-decoration: none;
+}
+
+body #post blockquote,
+body#collection blockquote,
+body#post blockquote,
+body#subpage blockquote {
+    border-left: 4px solid var(--highlight);
+}
+
+body #post blockquote p,
+body#collection blockquote p,
+body#post blockquote p,
+body#subpage blockquote p {
+    font-style: italic;
+    color: var(--background);
+}
+
+/*** TAGS ***/
+body#post article .e-content p a.hashtag {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.2rem;
+    border-bottom: none 0px transparent;
+}
+
+a.hashtag>span:first-child {
+    color: var(--highlight);
+}
+
+a.hashtag:hover span,
+span.p-category:hover {
+    text-decoration: none;
+}
+
+body#post article h2#title:before {
+    content: "#";
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    margin-right: 1rem;
+    color: var(--highlight)
+}
+
+/*** TAGS SUBPAGES ***/
+body#subpage #wrapper h1 {
+    font-family: monospace;
+    color: var(--text-bold);
+}
+
+body#subpage #wrapper h1:before {
+    content: "#";
+    margin-right: .3rem;
+    color: var(--highlight)
+}
+
+/*** IMAGES ***/
+/* This might cause issues with PNG images */
+img {
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*** FOOTER ***/
+footer p {
+    color: var(--text);
+}
+
+footer p a {
+    color: var(--text-bold);
+}
+
+footer p a:hover {
+    color: var(--highlight)
+}
+
+/*** TOP SHADOW ***/
+footer:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    width: 100%;
+    height: 100px;
+    max-width: 80%;
+    margin-top: -100px;
+    -webkit-box-shadow: 0 50px 120px 0 rgb(76 170 175 / 20%), 0 30px 50px 0 rgb(120 35 160 / 10%), 0 17px 40px 0 rgb(9 9 9 / 10%), 0 4px 16px 0 rgb(9 9 9 / 20%);
+    box-shadow: 0 50px 120px 0 rgb(76 170 175 / 20%), 0 30px 50px 0 rgb(120 35 160 / 10%), 0 17px 40px 0 rgb(9 9 9 / 10%), 0 4px 16px 0 rgb(9 9 9 / 20%);
+    opacity: 1;
+}
