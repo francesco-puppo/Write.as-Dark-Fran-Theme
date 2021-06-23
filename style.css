@@ -50,7 +50,7 @@ body {
     header h1 {
         text-align: center;
         color: var(--text-bold);
-
+        margin-bottom:.5rem;
     }
 
     body#post header,
@@ -184,6 +184,10 @@ body#post article h2#title {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 4rem;
+}
+
+body#post article .e-content p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 body#post article .e-content p a {
