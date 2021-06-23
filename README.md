@@ -1,9 +1,5 @@
 # Write.as Dark Fran Theme
 
-```
-This project is still a work in progress
-```
-
 *A beautiful dark theme for your Write.as blog*
 
 I created this theme to make sure that [my blog](https://blog.iamfran.com) was in line with the design of [my personal website](https://iamfran.com).
