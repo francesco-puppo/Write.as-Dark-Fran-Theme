@@ -184,6 +184,7 @@ body#post article h2#title {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 4rem;
+    line-height: 3rem;
 }
 
 body#post article .e-content p {
