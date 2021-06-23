@@ -70,6 +70,7 @@ header h1 a:not(.home) {
 }
 
 #post nav a:not(.home), 
+#post header a.pinned,
 header nav a,
 header nav a.pinned,
 header a, {
@@ -80,6 +81,7 @@ header a, {
 }
 
 header nav a:hover,
+#post header a.pinned:hover,
 header nav a.pinned:hover,
 header nav a:not(.home):hover, {
     color: var(--highlight);
