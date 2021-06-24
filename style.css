@@ -33,13 +33,11 @@ header h1 a:not(.home) {
     text-align: center;
 }
 
-#post nav a:not(.home), 
+#post nav a:not(.home),
 #post header a.pinned,
 header nav a,
 header nav a.pinned,
 header a {
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     font-style: italic;
 }
@@ -73,8 +71,6 @@ body#subpage .post-title {
     border-left-style: solid;
     border-color: var(--highlight);
     border-left-width: .2rem;
-    -webkit-transition: padding-left .4s ease-in-out, border-color .2s ease-in-out;
-    -o-transition: padding-left .4s ease-in-out, border-color .2s ease-in-out;
     transition: padding-left .4s ease-in-out, border-color .2s ease-in-out;
 }
 
@@ -88,7 +84,6 @@ body#collection .post-title a:hover,
 body#subpage .post-title a:hover {
     text-decoration: none;
     color: var(--highlight);
-
 }
 
 body#collection article p,
@@ -99,8 +94,6 @@ body#subpage article p {
 body#collection article p a,
 body#subpage article p a {
     color: var(--text-bold);
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
 
@@ -110,19 +103,25 @@ body#subpage article p a:hover {
     text-decoration: none;
 }
 
-body#collection a.read-more, 
-body#subpage a.read-more  {
+body#collection a.read-more,
+body#subpage a.read-more {
     color: default;
     font-family: 'Open Sans', sans-serif;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
 
-body#collection a.read-more:hover, 
+body#collection a.read-more:hover,
 body#subpage a.read-more:hover {
     color: var(--highlight);
     text-decoration: none;
+}
+
+body#collection article time.dt-published,
+body#collection #wrapper time, 
+body#subpage #wrapper time {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--text);
 }
 
 /*** ARTICLE ***/
@@ -131,7 +130,6 @@ body#post article {
     padding: 4rem 3rem;
     background-color: white;
     color: var(--background);
-    -webkit-box-shadow: rgb(76 170 175 / 20%) 0px 13px 27px -5px, rgb(120 35 160 / 10%) 0px 40px 100px -38px;
     box-shadow: rgb(76 170 175 / 20%) 0px 13px 27px -5px, rgb(120 35 160 / 10%) 0px 40px 100px -38px;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
@@ -142,7 +140,7 @@ body#post article h2#title {
     font-family: 'Cormorant Garamond', sans-serif;
     font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     line-height: 3rem;
 }
 
@@ -158,8 +156,6 @@ body#post article ul a {
     color: var(--background);
     border-bottom: solid 2px var(--highlight);
     background: transparent;
-    -webkit-transition: border-bottom .6s ease-in-out, background .3s ease-in-out;
-    -o-transition: border-bottom .6s ease-in-out, background .3s ease-in-out;
     transition: border-bottom .6s ease-in-out, background .3s ease-in-out
 }
 
@@ -193,14 +189,19 @@ body #post article ol,
 body #post article ul,
 body#post article ol,
 body#post article ul {
-color: var(--background)
+    color: var(--background)
 }
 
 body #post article ol li::marker,
 body #post article ul li::marker,
 body#post article ol li::marker,
 body#post article ul li::marker {
-  color: var(--highlight);
+    color: var(--highlight);
+}
+
+body#post article time.dt-published {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*** TAGS ***/
@@ -241,6 +242,31 @@ body#subpage #wrapper h1:before {
     color: var(--highlight)
 }
 
+/*** NEWSLETTER SUBSCRIBE ***/
+
+/* #emailsub:before {
+  content: "📬";
+  font-size: 2.5rem;
+} */
+
+
+#emailsub form input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#emailsub form input#subscribe-btn,
+input[type=submit] {
+    background-color: var(--highlight-opa);
+    border-color: var(--highlight-opa);
+}
+
+#emailsub form input#subscribe-btn:hover,
+input[type=submit]:hover {
+    background-color: var(--highlight-dark);
+    cursor: pointer;
+    letter-spacing: 1.1px;
+}
+
 /*** IMAGES ***/
 
 /* This might cause issues with PNG images. Commented because now animations are enabling it. */
@@ -257,7 +283,7 @@ footer p {
 
 footer p a,
 body footer a.home:link,
-body footer a.home:visited  {
+body footer a.home:visited {
     color: var(--text-bold);
 }
 
@@ -279,7 +305,6 @@ footer:before {
     height: 100px;
     max-width: 80%;
     margin-top: -100px;
-    -webkit-box-shadow: 0 50px 120px 0 rgb(76 170 175 / 20%), 0 30px 50px 0 rgb(120 35 160 / 10%), 0 17px 40px 0 rgb(9 9 9 / 10%), 0 4px 16px 0 rgb(9 9 9 / 20%);
     box-shadow: 0 50px 120px 0 rgb(76 170 175 / 20%), 0 30px 50px 0 rgb(120 35 160 / 10%), 0 17px 40px 0 rgb(9 9 9 / 10%), 0 4px 16px 0 rgb(9 9 9 / 20%);
     opacity: 1;
 }
@@ -290,20 +315,12 @@ footer:before {
 
 @media screen and (max-width: 550px) {
     header {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     header nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -315,7 +332,7 @@ footer:before {
     header h1 {
         text-align: center;
         color: var(--text-bold);
-        margin-bottom:.5rem;
+        margin-bottom: .5rem;
     }
 
     body#post header,
@@ -324,7 +341,7 @@ footer:before {
     }
 }
 
-/*** ANIMATION ***/
+/*** ANIMATIONS ***/
 
 
 /* ----------------------------------------------
@@ -334,9 +351,9 @@ footer:before {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
- body#post article img{
-	-webkit-animation: shadow-drop-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+body#post article img {
+    -webkit-animation: shadow-drop-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /**
@@ -344,33 +361,36 @@ footer:before {
  * animation shadow-drop-center
  * ----------------------------------------
  */
- @-webkit-keyframes shadow-drop-center {
+@-webkit-keyframes shadow-drop-center {
     0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              filter: grayscale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        -webkit-filter: grayscale(1);
+                filter: grayscale(1);
     }
+
     100% {
-      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-              filter: grayscale(0);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
     }
-  }
-  @keyframes shadow-drop-center {
+}
+
+@keyframes shadow-drop-center {
     0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              filter: grayscale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        -webkit-filter: grayscale(1);
+                filter: grayscale(1);
 
     }
+
     100% {
-      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-              filter: grayscale(0);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
 
     }
-  }
-  
+}
+
 
 /* ----------------------------------------------
  * Generated by Animista on 2021-6-24 10:18:50
@@ -379,9 +399,9 @@ footer:before {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
- body#post article h2#title:before {
-	-webkit-animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+body#post article h2#title:before {
+    -webkit-animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /* ----------------------------------------------
@@ -396,32 +416,34 @@ footer:before {
  * animation fade-in-left
  * ----------------------------------------
  */
- @-webkit-keyframes fade-in-left {
+@-webkit-keyframes fade-in-left {
     0% {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-      opacity: 0;
-      filter: grayscale(1);
+        transform: translateX(-50px);
+        opacity: 0;
+        -webkit-filter: grayscale(1);
+                filter: grayscale(1);
     }
+
     100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-      filter: grayscale(0);
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
     }
-  }
-  @keyframes fade-in-left {
+}
+
+@keyframes fade-in-left {
     0% {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-      opacity: 0;
-      filter: grayscale(1);
+        transform: translateX(-50px);
+        opacity: 0;
+        -webkit-filter: grayscale(1);
+                filter: grayscale(1);
     }
+
     100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-      filter: grayscale(0);
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0);
     }
-  }
-  
+}
