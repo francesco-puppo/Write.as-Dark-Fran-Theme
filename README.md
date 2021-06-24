@@ -30,11 +30,6 @@ There are now two animations when opening a blog post: the hashtag next to the t
 
 If you want to remove it, you can comment or delete the code under `/*** ANIMATIONS ***/`.
 
-## To do
-
-* Customize all different type formats (i.e. `code`)
-* ~~Add more animations (maybe)~~
-
 ## Screenshots
 
 ![Dark palette with orange highlights](https://i.snap.as/iBpD9Sya.jpg)
@@ -44,3 +39,11 @@ If you want to remove it, you can comment or delete the code under `/*** ANIMATI
 ![Fully optimized for mobile](https://i.snap.as/8fdJwadK.jpg)
 
 ![Details](https://i.snap.as/W4chEIkj.jpg)
+
+## Updates
+
+### Jun 24, 2021
+
+* Email subscriptions form has been styled
+* Post date has been styled
+* New animations on post title and images
