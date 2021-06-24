@@ -21,14 +21,7 @@ I created this theme to make sure that [my blog](https://blog.iamfran.com) was i
 
 The shadow is applied to all images and doesn't play nice with PNGs.
 
-If you want to remove it, you can comment or delete the code below:
-
-```css
-img {
-    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-```
+If you want to remove it, you can edit the code under `/*** ANIMATIONS ***/`.
 
 ### Animations
 
