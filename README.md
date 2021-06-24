@@ -6,8 +6,6 @@ I created this theme to make sure that [my blog](https://blog.iamfran.com) was i
 
 ![Home](https://i.snap.as/xZuovPhQ.jpg)
 
-### Details
-
 ## Features
 
 * Dark palette with **orange highlights**
@@ -17,12 +15,34 @@ I created this theme to make sure that [my blog](https://blog.iamfran.com) was i
 * Fully **responsive**
 * Some **animations** to make everything look nicer
 
+## Notes
+
+### Images shadow
+
+The shadow is applied to all images and doesn't play nice with PNGs.
+
+If you want to remove it, you can comment or delete the code below:
+
+```css
+img {
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+```
+
+### Animations
+
+After playing a bit with a few options I decided to go with something simple and not too distracting.
+There are now two animations when opening a blog post: the hashtag next to the title will fade in a change from grayscale to orange, and the same will happen to the images.
+
+If you want to remove it, you can comment or delete the code under `/*** ANIMATIONS ***/`.
+
 ## To do
 
 * Customize all different type formats (i.e. `code`)
-* Add more animations (maybe)
+* ~~Add more animations (maybe)~~
 
-### Screenshots
+## Screenshots
 
 ![Dark palette with orange highlights](https://i.snap.as/iBpD9Sya.jpg)
 
