@@ -10,6 +10,9 @@
     --higlight-gradient-dark: linear-gradient(180deg, var(--highlight-dark), var(--highlight));
     --highlight-opa: #4444443d;
     --highlight-transparent: rgba(255, 115, 0, 0.2);
+    --font-one: 'Cormorant Garamond', serif;
+    --font-two: 'Open Sans', sans-serif;
+    --font-three:'Source Code Pro', monospace;
 }
 
 /*** GENERAL ***/
@@ -27,7 +30,7 @@ body {
 header h1 a,
 header h1 a:not(.home) {
     color: var(--text-bold);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-one);
     font-size: 2.5rem;
     font-style: italic;
     text-align: center;
@@ -60,7 +63,7 @@ body#subpage section#wrapper {
 body#collection .post-title a,
 body#subpage .post-title a {
     color: var(--text-bold);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-one);
     font-size: 2.5rem;
 }
 
@@ -88,7 +91,7 @@ body#subpage .post-title a:hover {
 
 body#collection article p,
 body#subpage article p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
 }
 
 body#collection article p a,
@@ -106,7 +109,7 @@ body#subpage article p a:hover {
 body#collection a.read-more,
 body#subpage a.read-more {
     color: default;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
     transition: all .2s ease-in-out
 }
 
@@ -119,7 +122,7 @@ body#subpage a.read-more:hover {
 body#collection article time.dt-published,
 body#collection #wrapper time, 
 body#subpage #wrapper time {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
     font-size: 1rem;
     color: var(--text);
 }
@@ -132,12 +135,12 @@ body#post article {
     color: var(--background);
     box-shadow: rgb(76 170 175 / 20%) 0px 13px 27px -5px, rgb(120 35 160 / 10%) 0px 40px 100px -38px;
     border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
     max-width: 50rem;
 }
 
 body#post article h2#title {
-    font-family: 'Cormorant Garamond', sans-serif;
+    font-family: var(--font-one);
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 3rem;
@@ -145,7 +148,7 @@ body#post article h2#title {
 }
 
 body#post article .e-content p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
 }
 
 body#post article .e-content p a,
@@ -201,14 +204,14 @@ body#post article ul li::marker {
 
 body#post article time.dt-published {
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
 }
 
 /*** TAGS ***/
 
 body#post article .e-content p a.hashtag {
     text-decoration: none;
-    font-family: monospace;
+    font-family: var(--font-three);
     font-size: 1.2rem;
     border-bottom: none 0px transparent;
 }
@@ -224,7 +227,7 @@ span.p-category:hover {
 
 body#post article h2#title:before {
     content: "#";
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font-three);
     font-weight: 500;
     margin-right: 1rem;
     color: var(--highlight)
@@ -232,7 +235,7 @@ body#post article h2#title:before {
 
 /*** TAGS SUBPAGES ***/
 body#subpage #wrapper h1 {
-    font-family: monospace;
+    font-family: var(--font-three);
     color: var(--text-bold);
 }
 
@@ -251,7 +254,7 @@ body#subpage #wrapper h1:before {
 
 
 #emailsub form input {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-two);
 }
 
 #emailsub form input#subscribe-btn,
