@@ -73,7 +73,7 @@ header h1 a:not(.home) {
 #post header a.pinned,
 header nav a,
 header nav a.pinned,
-header a, {
+header a {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -83,7 +83,7 @@ header a, {
 header nav a:hover,
 #post header a.pinned:hover,
 header nav a.pinned:hover,
-header nav a:not(.home):hover, {
+header nav a:not(.home):hover {
     color: var(--highlight);
     text-decoration: none;
 }
