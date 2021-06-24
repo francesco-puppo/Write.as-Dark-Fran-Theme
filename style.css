@@ -147,6 +147,10 @@ body#post article h2#title {
     line-height: 3rem;
 }
 
+body#post article h2,
+body#post article h3,
+body#post article h4,
+body#post article h5,
 body#post article .e-content p {
     font-family: var(--font-two);
 }
@@ -273,10 +277,10 @@ input[type=submit]:hover {
 /*** IMAGES ***/
 
 /* This might cause issues with PNG images. Commented because now animations are enabling it. */
-/* img {
+body#post article .e-content p:not(:first-child) img {
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-} */
+}
 
 /*** FOOTER ***/
 
@@ -354,7 +358,7 @@ footer:before {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-body#post article img {
+ body#post article .e-content p:first-child img {
     -webkit-animation: shadow-drop-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
