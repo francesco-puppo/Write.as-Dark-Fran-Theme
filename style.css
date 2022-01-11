@@ -95,13 +95,15 @@ body#subpage article p {
 }
 
 body#collection article p a,
-body#subpage article p a {
+body#subpage article p a,
+#paging a {
     color: var(--text-bold);
     transition: all .2s ease-in-out
 }
 
 body#collection article p a:hover,
-body#subpage article p a:hover {
+body#subpage article p a:hover,
+#paging a:hover {
     color: var(--highlight);
     text-decoration: none;
 }
@@ -252,7 +254,7 @@ body#subpage #wrapper h1:before {
 /*** NEWSLETTER SUBSCRIBE ***/
 
 /* #emailsub:before {
-  content: "📬";
+  content: "?";
   font-size: 2.5rem;
 } */
 
