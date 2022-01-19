@@ -21,7 +21,7 @@ body {
     background: var(--background);
     background: var(--background);
     color: var(--text);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -129,6 +129,10 @@ body#subpage #wrapper time {
     color: var(--text);
 }
 
+body#collection img {
+    border-radius: 5px;
+}
+
 /*** ARTICLE ***/
 
 body#post article {
@@ -218,7 +222,7 @@ body#post article time.dt-published {
 body#post article .e-content p a.hashtag {
     text-decoration: none;
     font-family: var(--font-three);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-bottom: none 0px transparent;
 }
 
@@ -278,10 +282,14 @@ input[type=submit]:hover {
 
 /*** IMAGES ***/
 
-/* This might cause issues with PNG images. Commented because now animations are enabling it. */
+/* This might cause issues with PNG images. */
 body#post article .e-content p:not(:first-child) img {
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body#post article .e-content p img {
+border-radius: 5px;
 }
 
 /*** FOOTER ***/
